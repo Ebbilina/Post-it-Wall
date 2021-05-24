@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MME</title>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="heading"></h1>
+    </header>
+    <div id="pinboard">
+
+        <main>
+
+        </main>
+        <div class="controlMain">
+            <div id="help" class="button" onclick="window.open('helpPage.html')">Hilfe</div>
+            <div id="newPostIt" class="button" data-toggle="modal" data-target="#newModal">+</div>
+        </div>
+
+        <div class="controlStart">
+            <div id="newPinboard" class="button">new Pinboard</div>
+        </div>
+
+        <div class="modal fade" id="newModal" tabindex="-1" role="dialog" aria-labelledby="newModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="dropdown">
+                            <button class="modalButton" id="changeTextSize">Textgröße</button>
+                            <div class="dropdown-content">
+                                <a2 class="modalButton" id="smallText">klein</a2>
+                                <a class="modalButton" id="normalText">normal</a>
+                                <a3 class="modalButton" id="largeText">groß</a3>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="modalButton" id="changeTextColor" value="#000">Textfarbe</button>
+                            <div class="dropdown-content">
+                                <a class="modalButton" id="blackText">schwarz</a>
+                                <a4 class="modalButton" id="whiteText">weiß</a4>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="modalButton" id="changeColor">Post-It Farbe</button>
+                            <div class="dropdown-content">
+                                <a5 class="modalButton" id="yellowPostIt">gelb</a5>
+                                <a6 class="modalButton" id="bluePostIt">blau</a6>
+                                <a7 class="modalButton" id="greenPostIt">grün</a7>
+                                <a8 class="modalButton" id="redPostIt">rot</a8>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <textarea id="inputText" style="min-width: 100%;" rows="15"
+                            placeholder="Text eingeben..."></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="newBtn" class="modalButton" data-dismiss="modal" data-target="#newModal" disabled 
+                        data-toggle="tooltip" data-placement="top" title="neuen Zettel hinzufügen">Neu</button>
+                        <button id="saveBtn" class="modalButton" data-dismiss="modal" data-target="#newModal"
+                        data-toggle="tooltip" data-placement="top" title="vorhandenen Zettel bearbeiten">Übernehmen</button>
+                        <button id="closeBtn" class="modalButton" data-dismiss="modal" data-target="#newModal"
+                        data-toggle="tooltip" data-placement="top" title="Änderungen nicht übernehmen">Verwerfen</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template for single post-it -->
+    <script type="text/template" id="postIt-entry <%= id%>">
+        <div class="postIt">
+                <%= text %>
+        </div>
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "name": "public",
+  "version": "1.0.0",
+  "description": "Speichern Sie hier Ihr den Client-Code Ihres Projekt ab. Dazu gehören auch HTML- und CSS-Dateien sowie weitere Medieninhalte. Ersetzten Sie diesen Text durch eine kurze Beschreibung der Struktur bzw. Architektur Ihres Codes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babelify": "^10.0.0",
+    "browserify": "^16.5.2"
+  },
+  "dependencies": {
+    "interactjs": "^1.9.22",
+    "socket.io-client": "^2.3.0",
+    "underscore": "^1.10.2"
+  }
+}

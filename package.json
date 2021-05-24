@@ -1,0 +1,42 @@
+{
+  "name": "mme-ss2020-projekte-digitale-post-it-wand",
+  "version": "1.0.0",
+  "description": "[Beschreiben Sie hier in einer kurzen Zusammenfassung Hintergrund, Ziele und Funktionen Ihrer Anwendung. Fügen Sie einen sinnvollen Screenshot ein. Geben Sie eine Link zu einer lauffähigen, online-erreichbaren Version der fertigen Anwendung an.]",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "npm run build && node src/index.js",
+    "build": "cd public && npm run build && cd ..",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UniRegensburg/mme-ss2020-projekte-digitale-post-it-wand.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UniRegensburg/mme-ss2020-projekte-digitale-post-it-wand/issues"
+  },
+  "homepage": "https://github.com/UniRegensburg/mme-ss2020-projekte-digitale-post-it-wand#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "browserify": "^16.5.2",
+    "eslint": "^7.9.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^9.0.0",
+    "interactjs": "^1.9.20",
+    "nodemon": "^2.0.4",
+    "socket.io": "^2.3.0",
+    "uuid": "^8.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@babel/preset-react": "^7.10.4",
+    "babelify": "^10.0.0"
+  }
+}
